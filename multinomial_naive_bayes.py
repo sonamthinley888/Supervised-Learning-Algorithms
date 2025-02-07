@@ -37,8 +37,8 @@ X_train_vectorized = vectorizer.fit_transform(X_train)
 X_test_vectorized = vectorizer.transform(X_test)
 
 # Train the model 
-# model = MultinomialNB()
-model = LogisticRegression(max_iter=1000)  # Increasing max_iter to ensure convergence
+model = MultinomialNB()
+
 model.fit(X_train_vectorized, Y_train)
 
 # Test the model
